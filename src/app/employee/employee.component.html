@@ -44,7 +44,8 @@
     <tr *ngFor="let e of EmployeeObj">
       <td>{{e.empId}}</td>
       <td>{{e.empName}}</td>
-      <td>{{e.dept}}</td>
+      <td *ngIf="show1">{{e.dept}}</td>
     </tr>
   </tbody>
 </table>
+<button (click)="show1=!show1">{{show1 ? 'Hide': 'Show'}}</button>

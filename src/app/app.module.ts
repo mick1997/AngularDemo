@@ -8,6 +8,8 @@ import { EmployeeComponent } from './employee/employee.component';
 import { FormsModule } from '@angular/forms';
 import { DirectiveDemoComponent } from './directive-demo/directive-demo.component';
 import { CommonModule } from '@angular/common';
+import { HighlightDirective } from './highlight.directive';
+import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { CommonModule } from '@angular/common';
     MobilesComponent,
     EmployeeComponent,
     DirectiveDemoComponent,
+    HighlightDirective,
+    PipeDemoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, CommonModule],
   providers: [],

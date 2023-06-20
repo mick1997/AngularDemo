@@ -19,6 +19,7 @@ export class EmployeeComponent {
   empId = 10001;
   empName = "John";
   dept = "Development";
+  show1!: boolean;
 
   show() {
     console.log("Employee Id: " + this.empId);

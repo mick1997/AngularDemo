@@ -1,4 +1,4 @@
-<h1>*ngIf Demo</h1>
+<h1 appHighlight>*ngIf Demo</h1>
 
 <body>
   <div *ngIf="isLogIn; else isLogout">
@@ -21,14 +21,14 @@
   </div>
 </body>
 
-<h1>*ngFor Demo</h1>
+<h1 appHighlight>*ngFor Demo</h1>
 <ul *ngFor="let i of department_list">
   <li>{{i}}</li>
 </ul>
 
 {{department_list}}
 
-<h1>*ngSwitch Demo</h1>
+<h1 appHighlight>*ngSwitch Demo</h1>
 <div>
   <label for="fruit">Select a Fruit</label>
   <select id="fruit" [(ngModel)]="selectedFruit">
