@@ -1,0 +1,19 @@
+body {
+  color: red;
+  font-size: 22;
+  background-color: aquamarine;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: aliceblue;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}

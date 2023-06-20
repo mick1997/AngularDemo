@@ -1,0 +1,24 @@
+<h1>*ngIf Demo</h1>
+
+<body>
+  <div *ngIf="isLogIn; else isLogout">
+    Hello you are loggedIn
+  </div>
+
+  <ng-template #isLogout>
+    You are logged out...
+  </ng-template>
+
+  <br>
+  <div>
+    <h1>Check Leap Year</h1>
+    <input [(ngModel)]="year" placeholder="Enter a year">
+    <button (click)="checkLeapYear()">Check</button>
+    <ng-container *ngIf="year !== undefined">
+      <p *ngIf="isLeapYear">{{ year }} is a leap year.</p>
+      <p *ngIf="!isLeapYear">{{ year }} is not leap year.</p>
+    </ng-container>
+  </div>
+</body>
+
+

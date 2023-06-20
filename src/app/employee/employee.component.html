@@ -1,0 +1,34 @@
+<h1>employee Page</h1>
+
+<body>
+  Employee Id: {{empId}}
+  <br>
+  Employee name: {{empName}}
+  <br>
+  Department: {{dept}}
+  <br>
+
+  <button (click)="show()">EmpDetails</button>
+</body>
+
+<h1>Property Binding</h1>
+
+<body>
+  Employee Id: <input type="text" value={{empId}}> <br>
+  Employee name: <input type="text" value={{empName}}> <br>
+  Department: <input type="text" value={{dept}}> <br>
+</body>
+
+<hr>
+<h1>Style Binding</h1>
+<body>
+  <p [style.color]="'red'">CSS Class red apply</p>
+  <p [style.background-color]="'green'">CSS class green apply</p>
+</body>
+
+<h1>Two way Binding</h1>
+<body>
+  Employee Id: <input type="text" [(ngModel)]="empId"> <br>
+  Employee name: <input type="text" [(ngModel)]="empName"> <br>
+  Department: <input type="text" [(ngModel)]="dept"> <br>
+</body>
