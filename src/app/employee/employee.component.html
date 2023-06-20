@@ -32,3 +32,19 @@
   Employee name: <input type="text" [(ngModel)]="empName"> <br>
   Department: <input type="text" [(ngModel)]="dept"> <br>
 </body>
+
+<h1>Employee Object Demo</h1>
+<table border="2">
+  <thead>
+    <th>EmployeeId</th>
+    <th>EmployeeName</th>
+    <th>Department</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let e of EmployeeObj">
+      <td>{{e.empId}}</td>
+      <td>{{e.empName}}</td>
+      <td>{{e.dept}}</td>
+    </tr>
+  </tbody>
+</table>

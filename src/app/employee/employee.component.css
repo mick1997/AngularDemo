@@ -17,3 +17,8 @@ h1 {
 .green {
   color: green;
 }
+
+table {
+  background-color: aquamarine;
+  color: red;
+}

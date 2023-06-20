@@ -21,4 +21,28 @@
   </div>
 </body>
 
+<h1>*ngFor Demo</h1>
+<ul *ngFor="let i of department_list">
+  <li>{{i}}</li>
+</ul>
+
+{{department_list}}
+
+<h1>*ngSwitch Demo</h1>
+<div>
+  <label for="fruit">Select a Fruit</label>
+  <select id="fruit" [(ngModel)]="selectedFruit">
+    <option value="apple">Apple</option>
+    <option value="banana">Banana</option>
+    <option value="orange">Orange</option>
+    <option value="grape">Grape</option>
+  </select>
+  <div [ngSwitch]="selectedFruit">
+    <p *ngSwitchCase="'apple'">You Selected Apple.</p>
+    <p *ngSwitchCase="'banana'">You Selected Banana.</p>
+    <p *ngSwitchCase="'orange'">You Selected Orange.</p>
+    <p *ngSwitchCase="'grape'">You Selected Grape.</p>
+    <p *ngSwitchDefault>Selected a Fruit.</p>
+  </div>
+</div>
 

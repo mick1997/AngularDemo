@@ -12,6 +12,11 @@ export class DirectiveDemoComponent {
   year: number | undefined;
   isLeapYear: boolean = true;
 
+
+  department_list = ["IT", "Admin", "Accounts", "Dev", "QA", "Prod"];
+
+  selectedFruit!: string;
+
   checkLeapYear() {
     if (this.year !== undefined) {
       this.isLeapYear = (this.year % 4 === 0 && this.year % 100 !== 0) || (this.year % 400 === 0);
