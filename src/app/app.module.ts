@@ -10,6 +10,9 @@ import { DirectiveDemoComponent } from './directive-demo/directive-demo.componen
 import { CommonModule } from '@angular/common';
 import { HighlightDirective } from './highlight.directive';
 import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
+import { DigitcountPipe } from './digitcount.pipe';
+import { HomeComponent } from './home/home.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
     DirectiveDemoComponent,
     HighlightDirective,
     PipeDemoComponent,
+    DigitcountPipe,
+    HomeComponent,
+    ErrorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, CommonModule],
   providers: [],

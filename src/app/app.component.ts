@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Welcome to SNVA';
+  digits: number = 8978898989898989;
 }
